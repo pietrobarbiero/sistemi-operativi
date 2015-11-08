@@ -1,0 +1,9 @@
+OPT = -Wall -g
+FILES = *~
+
+target:
+	gcc $(OPT) -c main.c
+	gcc $(OPT) -o exefile main.o
+	./exefile main.c
+	./exefile .
+	rm -rf $(FILES)

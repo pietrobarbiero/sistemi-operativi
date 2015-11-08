@@ -1,0 +1,13 @@
+CC = gcc
+SET = -Wall -g -o
+FEXE = exe
+FC = conc.c
+CLEANF = *bak* *∼ *.c∼ core *.o
+
+target: 
+	$(CC) $(SET) $(FEXE) $(FC)
+	./$(FEXE)
+	make -f mkf clean
+
+clean:
+	rm -f $(CLEANF)
