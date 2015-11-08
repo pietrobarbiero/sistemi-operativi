@@ -1,0 +1,23 @@
+// Esercizio 1
+// Albero di generazione dei processi
+
+p
+	p
+		p
+			->system with i=0
+			p
+				->system with i=1
+			f3
+				->exec with i=1
+		f2
+			->exec with i=0
+	f1
+		f1
+			->system with i=0
+			f1
+				->system with i=1
+			f12
+				->exec with i=1
+		f11
+			->exec with i=0
+	

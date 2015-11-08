@@ -1,0 +1,9 @@
+SET = -Wall -g
+FILES = *bak* *∼ core
+
+target: 
+	gcc $(SET) -o exe1 es1.c
+	rm -rf $(FILES)
+	./exe1 ./root
+
+

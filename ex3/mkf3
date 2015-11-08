@@ -1,0 +1,4 @@
+target:
+	gcc -Wall -g -o exe3 es3.c
+	./exe3
+	rm -Rf *.o *~
