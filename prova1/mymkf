@@ -1,9 +1,0 @@
-OPT = -Wall -g
-FILES = *~
-
-target:
-	gcc $(OPT) -c main.c
-	gcc $(OPT) -o exefile main.o
-	./exefile in out
-	rm -rf $(FILES)
-	less out

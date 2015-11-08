@@ -1,4 +1,0 @@
-target:
-	gcc -Wall -g -o exe1 es1.c
-	./exe1
-	rm -Rf *.o *~

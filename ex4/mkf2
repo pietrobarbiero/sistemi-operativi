@@ -1,4 +1,0 @@
-target:
-	gcc -Wall -g -o exe2 es2.c
-	./exe2
-	rm -Rf *.o *~
