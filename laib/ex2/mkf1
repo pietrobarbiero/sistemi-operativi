@@ -1,0 +1,22 @@
+CC = gcc
+SET = -Wall -g -o
+FEXE = exe1
+FC = es1.c
+CLEANF = *bak* *∼ *.c∼ core *.o
+
+target: 
+	$(CC) $(SET) $(FEXE) $(FC)
+	./$(FEXE) ./root
+	make -f mkf1 distclean
+	make -f mkf1 install
+
+install:
+	mkdir ../bin
+	cp $(FEXE) ../bin
+
+clean:
+	rm -f $(CLEANF)
+
+distclean:
+	make -f mkf1 clean
+	rm -fR ../bin
